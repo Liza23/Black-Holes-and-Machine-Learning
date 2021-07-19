@@ -1,3 +1,0 @@
-# diff(s, r, order=1) ** 2 - (1 - (2 * G * M) / r) + (r ** 2) *
-# (diff(theta, r, order=1) ** 2 + np.sin(theta) ** 2 + diff(phi, r, order=1))
-
