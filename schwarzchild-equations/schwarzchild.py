@@ -7,7 +7,6 @@ from neurodiffeq.monitors import Monitor1D
 from neurodiffeq.ode import solve_system
 
 # r is replaced here by rho# rho is a dimensionless quantitu
-
 def ricci_tensor(alpha, beta, r): return [
     diff(alpha, r, order=2) + diff(alpha, r, order=1) * diff(alpha, r, order=1) -
     diff(beta, r, order=1) * diff(alpha, r, order=1) +
@@ -21,8 +20,8 @@ def ricci_tensor(alpha, beta, r): return [
 # alpha -> 0
 # beta -> 0
 init_vals = [
-    IVP(t_0=5, u_0=0.0),
-    IVP(t_0=5, u_0=0.0)
+    IVP(t_0=5, u_0=5),
+    IVP(t_0=5, u_0=5)
 ]
 
 # Obtaining Solutions
